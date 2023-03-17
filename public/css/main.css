@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .promotion {
   align-items: center;
   background-color: #FFDCD3;
@@ -12,12 +18,11 @@
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.02em;
-  text-align: center;
   text-transform: uppercase;
 }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@media screen and (max-width: 576px) {
+  .promotion__text {
+    font-family: "Neogrotesk Ess";
+    font-size: 12px;
+  }
 }

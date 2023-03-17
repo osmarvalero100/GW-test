@@ -1,3 +1,4 @@
-@use 'promotion';
-
+@import 'global-vars';
 @import 'reset';
+@import './mixins/media-queries';
+@import 'promotion';
