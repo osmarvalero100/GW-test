@@ -1,16 +1,44 @@
+.footer {
+    position: relative;
+}
 .wrapper_footer {
     align-items: center;
     background-image: url(../../public/img/bg-footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    height: 550px;
+    height: 640px;
     justify-content: center;
 }
 
+.pill {
+    position: absolute;
+}
+
+.pill__green {
+    @include pill_position(7%, 30%);
+}
+
+.pill__pink {
+    @include pill_position(18%, 34%);
+}
+
+.pill__gray{
+    @include pill_position(5%, 68%);
+    rotate: 45deg;
+    filter: blur(6px);
+}
+
+.pill__white {
+    @include pill_position(91%, 35%);
+  }
+  .pill__blue {
+    @include pill_position(80%, 70%);
+  }
+
 .newsletter {
     text-align: center;
-    margin-top: 6%;
+    margin-top: 10%;
 
     h2 {
         @include subtitles;

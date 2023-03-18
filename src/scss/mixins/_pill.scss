@@ -1,0 +1,4 @@
+@mixin pill_position($pos-x, $pos-y) {
+    left: $pos-x;
+    top: $pos-y;
+}
