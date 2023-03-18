@@ -4,6 +4,7 @@
     border-radius: $border-radius;
     box-sizing: border-box;
     cursor: pointer;
+    height: 48px;
     padding: 12px 32px 12px 40px;
     opacity: 0.9;
 
@@ -14,8 +15,10 @@
 
 @mixin btn_primary {
     background-color: $btn-bg-primary-color;
+    color: $btn-bg-secundary-color;
 }
 
 @mixin btn_secundary {
     background-color: $btn-bg-secundary-color;
+    color: $btn-bg-primary-color;
 }

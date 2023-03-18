@@ -5,6 +5,10 @@
     font-size: 44px;
     line-height: 140%;
     color: $titles-color;
-    align: $align; 
+    align: $align;
+
+    @include mobile {
+        font-size: 28px;
+    }
 }
 
