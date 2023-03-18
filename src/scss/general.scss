@@ -1,0 +1,6 @@
+.btn{
+    @include btn;
+}
+.btn--primary {
+    @include btn_primary;
+}

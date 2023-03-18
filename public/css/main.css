@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+.btn {
+  background: #f4f4f4;
+  border: none;
+  border-radius: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 12px 32px 12px 40px;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn--primary {
+  background-color: #EFA693;
+}
+
 .promotion {
   align-items: center;
   background-color: #FFDCD3;
@@ -25,4 +42,57 @@
     font-family: "Neogrotesk Ess";
     font-size: 12px;
   }
+}
+
+.wrapper_footer {
+  align-items: center;
+  background-image: url(../../public/img/bg-footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 550px;
+  justify-content: center;
+}
+
+.newsletter {
+  text-align: center;
+  margin-top: 6%;
+}
+.newsletter h2 {
+  font-family: "Abhaya Libre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 140%;
+  color: #444950;
+  align: left;
+  width: 99%;
+}
+.newsletter p {
+  color: #939393;
+  font-family: "Filson Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 180%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 50%;
+}
+.newsletter__form {
+  margin-top: 30px;
+}
+.newsletter__form input {
+  border: 1px solid #EFA693;
+  border-radius: 100px;
+  height: 48px;
+  width: 360px;
+  padding: 10px 24px;
+  font-family: "Filson Pro";
+  font-weight: 800;
+  font-size: 15px;
+}
+.newsletter__form input:focus {
+  outline: none;
 }

@@ -1,4 +1,9 @@
 @import 'global-vars';
 @import 'reset';
+@import './mixins/button';
+@import './mixins/subtitles';
 @import './mixins/media-queries';
+@import 'general';
 @import 'promotion';
+@import 'slider';
+@import './partials/footer';

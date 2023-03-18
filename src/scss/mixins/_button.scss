@@ -1,0 +1,21 @@
+@mixin btn($bg-color: #f4f4f4, $border-radius: 100px) {
+    background: $bg-color;
+    border: none;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 12px 32px 12px 40px;
+    opacity: 0.9;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+@mixin btn_primary {
+    background-color: $btn-bg-primary-color;
+}
+
+@mixin btn_secundary {
+    background-color: $btn-bg-secundary-color;
+}
