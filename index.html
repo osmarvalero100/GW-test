@@ -18,13 +18,36 @@
     <div class="container">
         <div id="slider_products" class="slider">
             <div class="slider__header">
-                <h2>Discover our <br> planet-friendly offer</h2>
+                <div class="slider__title">
+                    <h2>Discover our <br> planet-friendly offer</h2>
+                </div>
+                <div class="slider__arrows">
+                    <!-- <div class="slider__arrow">
+                        <div class="aslider__arrow--left"><</div>
+                    </div>
+                    <div class="slider__arrow">
+                        <div class="aslider__arrow--left">></div>
+                    </div> -->
+                    <button aria-label="Advance slider left" type="button" class="aslider__arrows__left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+                    </button>
+                    <button aria-label="Advance slider right" type="button" class="aslider__arrow__right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+                    </button>
+                </div>
             </div>
             <div class="slider__content">
                 <div class="slider__slides">
                     <div class="card">
-                        <div class="discount">20%</div>
                         <div class="card__cover">
+                            <div class="discount">20%</div>
+                            <button class="btn btn--secondary">Show now</button>
+                        </div>
+                        <div class="card__detail"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card__cover card__cover--xl">
+                            <div class="discount">20%</div>
                             <button class="btn btn--secondary">Show now</button>
                         </div>
                         <div class="card__detail"></div>
@@ -32,7 +55,7 @@
                 </div>
             </div>
             <div class="slider__footer">
-                <button class="btn btn--primary">Show now</button>
+                <button class="btn btn--primary">BROWSE ALL PRODUCTS</button>
             </div>
         </div>
     </div>

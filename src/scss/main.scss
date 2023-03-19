@@ -2,8 +2,10 @@
 @import 'reset';
 @import './mixins/button';
 @import './mixins/subtitles';
+@import './mixins/cover';
 @import './mixins/media-queries';
 @import 'general';
+@import './partials/card';
 @import './mixins/pill';
 @import 'promotion';
 @import 'slider';

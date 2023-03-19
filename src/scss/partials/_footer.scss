@@ -1,5 +1,6 @@
 .footer {
     position: relative;
+    margin-top: 20px;
 }
 .wrapper_footer {
     align-items: center;
@@ -95,7 +96,6 @@
     text-align: center;
 
     h2 {
-        @include subtitles;
         width: 99%;
     }
     p {
@@ -142,6 +142,8 @@
         }
 
         .btn {
+            width: 119px;
+            
             @include mobile {
                 margin-top: 10px;
                 width: 199px;

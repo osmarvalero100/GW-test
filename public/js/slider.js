@@ -1,0 +1,1 @@
+const coverColors = ['#bae9fd', '#cae9fb', '#ffeba6', '#9ee4d9', '#adebd4'];

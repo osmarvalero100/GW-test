@@ -1,0 +1,39 @@
+.slider {
+    &__header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__arrows {
+        text-align: right;
+
+        button {
+            background: #FFFFFF;
+            border: none;
+            border-radius: 50%;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            cursor: pointer;
+            height: 39.5px;
+            width: 39.5px;
+            
+            &:hover {
+                opacity: .8;
+            }
+
+            svg {
+                height: 12px;
+                width: 15px;
+                fill: #555B64;
+            }
+        }
+    }
+
+    &__slides {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__footer {
+        text-align: center;
+    }
+}
