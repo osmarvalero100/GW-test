@@ -31,6 +31,9 @@
     &__slides {
         display: flex;
         gap: 1rem;
+        width: 100%;
+        overflow: hidden;
+        min-height: 397px;
     }
 
     &__footer {

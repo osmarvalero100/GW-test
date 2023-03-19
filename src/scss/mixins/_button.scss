@@ -20,13 +20,13 @@
 
 @mixin btn_primary {
     background-color: $btn-bg-primary-color;
-    color: $btn-bg-secundary-color;
+    color: $btn-bg-secondary-color;
     border: 1px solid $btn-bg-primary-color;
     width: 270px;
 }
 
 @mixin btn_secundary {
-    background-color: $btn-bg-secundary-color;
+    background-color: $btn-bg-secondary-color;
     color: $btn-bg-primary-color;
     width: 297px;
 }

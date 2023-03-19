@@ -4,8 +4,10 @@
     background: $bg;
     border-radius: $border-radius;
     position: relative;
+    background-size: cover;
 }
 
 @mixin cover_xl() {
     height: 398px;
+    background-size: 320px 397px;
 }
