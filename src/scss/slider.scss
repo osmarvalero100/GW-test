@@ -42,14 +42,16 @@
     }
 
     &__content {
+        overflow: hidden;
         padding-top: 40px;
+        width: 100%;
     }
 
     &__slides {
         display: flex;
         gap: 1rem;
-        width: 100%;
-        overflow: hidden;
+        // width: 100%;
+        // overflow: hidden;
         min-height: 397px;
     }
 
