@@ -6,6 +6,14 @@
 
         &__title {
             margin-left: 40%;
+            position: relative;
+            
+            &__image {
+                z-index: -1;
+                left: -26px;
+                position: absolute;
+                top: 31%;
+            }
         }
     }
 
