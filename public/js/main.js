@@ -1,4 +1,4 @@
-(async ()=> {
+(async () => {
     const products = await getProducts();
 
     if (products.nodes) {
@@ -9,14 +9,17 @@
              
             const coverSize = ((i % 2) == 0) ? 'card__cover' : 'card__cover card__cover--xl';
             const btnText = (product.totalInventory > 0) ? 'Add to cart' : 'See more';
+            const ratings = product.tags.filter(tag => (!isNaN(tag) && tag != ''));
 
             const card = new Card()
                 .setCover(product.featuredImage.url, coverSize)
-                .setDiscount(20)
                 .setButton(btnText)
+                .setTitle(product.title)
+                .setRating(ratings)
+                .setPrice(product.prices)
                 .build();
             
-            slider.setCard(card)
+            slider.setCard(card);
         }
     } 
     
