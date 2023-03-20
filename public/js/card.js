@@ -37,7 +37,7 @@ class Card {
 
     setTitle(title) {
         const wrapperTitle = document.createElement('div');
-        wrapperTitle.classList.add('cart__title');
+        wrapperTitle.classList.add('card__title');
         this.title = document.createElement('p');
         this.title.textContent = title;
         wrapperTitle.appendChild(this.title);
@@ -92,7 +92,7 @@ class Card {
         }
 
         const ratingValue = document.createElement('span');
-        ratingValue.classList.add('card__rating_value');
+        ratingValue.classList.add('card__rating__value');
         ratingValue.textContent = `(${rating})`;
         wrapperRating.appendChild(ratingValue);
         this.wrapper.appendChild(wrapperRating);
@@ -109,9 +109,10 @@ class Card {
     }
 
     setPrice(price) {
+        const currencySymbol = {EUR: '€'}
         const minAmount = parseFloat(price.min.amount).toFixed(2);
         const maxAmount = parseFloat(price.max.amount).toFixed(2);
-        let discount = false;
+        let discount = true;
 
         if (minAmount < maxAmount) {
             const discountPercetage = (100 * minAmount) / maxAmount;
@@ -125,13 +126,15 @@ class Card {
         if (discount) {
             const spanDiscountPrice = document.createElement('span');
             spanDiscountPrice.classList.add('card__price__discount');
-            spanDiscountPrice.textContent = minAmount;
+            let symb = price.min.currencyCode.toUpperCase();
+            spanDiscountPrice.textContent = `${currencySymbol[symb]}${minAmount}`;
             wrapperPrice.appendChild(spanDiscountPrice);
         }
 
         const spanOriginalPrice = document.createElement('span');
         spanOriginalPrice.classList.add('card__price__original');
-        spanOriginalPrice.textContent = maxAmount;
+        let symb = price.max.currencyCode.toUpperCase();
+        spanOriginalPrice.textContent = `${currencySymbol[symb]}${maxAmount}`;
         wrapperPrice.appendChild(spanOriginalPrice);
 
         this.wrapper.appendChild(wrapperPrice);

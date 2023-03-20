@@ -1,5 +1,4 @@
 .card {
-    
 
     &__cover {
         @include cover(320px, 320px);
@@ -36,5 +35,60 @@
 
     &__cover--xl {
         @include cover_xl;
+    }
+
+    &__title {
+            margin-top: 20px;
+
+        p {
+            color: $titles-color;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 132%;
+        }
+    }
+
+    &__rating {
+        display: inline-block;
+        width: 50%;
+
+        svg path:hover {
+            fill: blueviolet;
+        }
+
+        &__value {
+            color: $gray-paragraph;
+            font-family: $main-font-family;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-left: 5px;
+        }
+    }
+
+    &__price {
+        display: inline-block;
+        text-align: right;
+        width: 50%;
+
+        &__original {
+            color: $titles-color;
+            font-family: $main-font-family;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 180%;
+            text-align: right;
+        }
+
+        &__discount {
+            color: $gray-paragraph;
+            font-family: $main-font-family;
+            font-size: 15px;
+            font-weight: 350;
+            line-height: 180%;
+            margin-right: 10px;
+            text-align: right;
+            text-decoration-line: line-through;
+        }
     }
 }

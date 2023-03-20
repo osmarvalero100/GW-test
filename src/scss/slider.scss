@@ -23,9 +23,21 @@
 
         &__nav {
             bottom: 10px;
-            margin-left: 65%;
+            margin-left: 25%;
             position: absolute;
-            width: 90px;
+            width: 185px;
+
+            img {
+                position: absolute;
+                top: 6px;
+                z-index: -1;
+            }
+            &__img__left {
+                left: 28px;
+            }
+            &__img__right {
+                left: 120px;
+            }
         }
 
         button {
@@ -35,6 +47,7 @@
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             cursor: pointer;
             height: 39.5px;
+            margin-left: 50px;
             width: 39.5px;
             
             &:hover {
