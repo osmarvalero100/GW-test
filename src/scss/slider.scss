@@ -1,11 +1,24 @@
 .slider {
+
     &__header {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        &__title {
+            margin-left: 40%;
+        }
     }
 
-    &__arrows {
+    .arrows {
         text-align: right;
+        position: relative;
+
+        &__nav {
+            bottom: 10px;
+            margin-left: 65%;
+            position: absolute;
+            width: 90px;
+        }
 
         button {
             background: #FFFFFF;
@@ -28,6 +41,10 @@
         }
     }
 
+    &__content {
+        padding-top: 40px;
+    }
+
     &__slides {
         display: flex;
         gap: 1rem;
@@ -37,6 +54,8 @@
     }
 
     &__footer {
+        margin-bottom: 45px;
+        margin-top: 90px;
         text-align: center;
     }
 }

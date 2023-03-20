@@ -2,9 +2,9 @@ h2 {
     @include subtitles;
 }
 .container {
-    width: 90%;
     margin: 0 auto;
     margin-top: 20px;
+    padding: 10px
 }
 .btn{
     @include btn;
