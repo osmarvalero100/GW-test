@@ -112,7 +112,7 @@ class Card {
         const currencySymbol = {EUR: '€'}
         const minAmount = parseFloat(price.min.amount).toFixed(2);
         const maxAmount = parseFloat(price.max.amount).toFixed(2);
-        let discount = true;
+        let discount = false;
 
         if (minAmount < maxAmount) {
             const discountPercetage = (100 * minAmount) / maxAmount;
