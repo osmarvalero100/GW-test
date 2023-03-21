@@ -16,7 +16,7 @@ if (newsletterForm) {
         const email = formData.get('email');
 
         if (validateEmail(email)) {
-            alert('successful subscription.');
+            alert('Successful subscription.');
             e.target.reset();
         } else {
             alert('Please enter a valid email.')
