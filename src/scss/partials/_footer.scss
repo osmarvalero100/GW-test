@@ -11,6 +11,10 @@
     height: 640px;
     justify-content: center;
 
+    @include tablet {
+        background-size: cover;
+    }
+
     @include mobile {
         background-image: url(../../public/img/bg-footer-mobile.png);
         background-position: top;
@@ -26,7 +30,7 @@
     @include pill_position(7%, 30%);
 
     @include tablet {
-        @include pill_position(7%, 22%);
+        @include pill_position(9%, 24%);
     }
 
     @include mobile {
@@ -34,15 +38,13 @@
         height: 22.57px;
         width: 22.97px;
     }
-
-    
 }
 
 .pill__pink {
     @include pill_position(18%, 34%);
 
     @include tablet {
-        @include pill_position(18%, 25%);
+        @include pill_position(32%, 29%);
     }
 
     @include mobile {
@@ -58,7 +60,7 @@
     rotate: 45deg;
 
     @include tablet {
-        @include pill_position(6%, 48%);
+        @include pill_position(11%, 52%);
     }
 
     @include mobile {
@@ -71,6 +73,10 @@
 .pill__white {
     @include pill_position(91%, 35%);
 
+    @include tablet {
+        @include pill_position(89%, 47%);
+    }
+
     @include mobile {
         @include pill_position(82%, 50%);
         height: 36.08px;
@@ -81,7 +87,7 @@
     @include pill_position(80%, 70%);
 
     @include tablet {
-        @include pill_position(75%, 60%);
+        @include pill_position(73%, 68%);
     }
 
     @include mobile {
@@ -149,6 +155,10 @@
                 width: 199px;
             }
         }
+    }
+
+    @include tablet {
+        margin-top: 20%;
     }
 
     @include mobile {
