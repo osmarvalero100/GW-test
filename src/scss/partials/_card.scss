@@ -30,6 +30,15 @@
             bottom: 10px;
             left: 11px;
             position: absolute;
+
+            @include mobile {
+                width: 228px;
+                left: 9px;
+            }
+        }
+
+        @include mobile {
+            @include cover(247px, 247px, 12px);
         }
     }
 
@@ -63,6 +72,10 @@
             font-weight: 400;
             line-height: 140%;
             margin-left: 5px;
+        }
+
+        @include mobile {
+            width: 100%;
         }
     }
 

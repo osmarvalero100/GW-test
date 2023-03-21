@@ -1,4 +1,4 @@
-@mixin cover($height, $width, $bg: #f4f4f4, $border-radius: 15px) {
+@mixin cover($height, $width, $border-radius: 15px, $bg: #f4f4f4) {
     height: $height;
     width: $width;
     background: $bg;

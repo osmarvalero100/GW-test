@@ -4,7 +4,11 @@ h2 {
 .container {
     margin: 0 auto;
     margin-top: 20px;
-    padding: 10px
+    padding: 10px;
+
+    @include mobile {
+        margin-left: 10px;
+    }
 }
 .btn{
     @include btn;

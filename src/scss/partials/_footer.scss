@@ -14,7 +14,7 @@
     @include mobile {
         background-image: url(../../public/img/bg-footer-mobile.png);
         background-position: top;
-        background-size: auto;
+        background-size: cover;
     }
 }
 
@@ -30,7 +30,7 @@
     }
 
     @include mobile {
-        @include pill_position(7%, 20%);
+        @include pill_position(10%, 25%);
         height: 22.57px;
         width: 22.97px;
     }
@@ -46,7 +46,7 @@
     }
 
     @include mobile {
-        @include pill_position(42%, 21%);
+        @include pill_position(43%, 29%);
         height: 31.17px;
         width: 29.95px;
     }
@@ -62,7 +62,7 @@
     }
 
     @include mobile {
-        @include pill_position(3%, 37%);
+        @include pill_position(5%, 47%);
         height: 33px;
         width: 47.67px;
     }
@@ -72,7 +72,7 @@
     @include pill_position(91%, 35%);
 
     @include mobile {
-        @include pill_position(82%, 38%);
+        @include pill_position(82%, 50%);
         height: 36.08px;
         width: 38.2px;
     }
@@ -85,7 +85,7 @@
     }
 
     @include mobile {
-        @include pill_position(62%, 56%);
+        @include pill_position(62%, 67%);
         height: 21.46px;
         width: 25.88px;
     }
@@ -149,5 +149,9 @@
                 width: 199px;
             }
         }
+    }
+
+    @include mobile {
+        margin-top: 50%;
     }
 }
